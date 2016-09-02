@@ -6,7 +6,7 @@ class Root extends Component {
     };
 
     render() {
-        return <div>Main component. </div>
+        return <div>Root component. </div>
     }
 }
 
