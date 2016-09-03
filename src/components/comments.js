@@ -11,7 +11,7 @@ export default class Comments extends Component {
         const {comments} = this.props;
         return <div className="row">
             <h3>Comments</h3>
-            <ul>
+            <ul className="list-group">
                 {comments.map((comment, i)=><Comment comment={comment} key={i}/>)}
             </ul>
         </div>;

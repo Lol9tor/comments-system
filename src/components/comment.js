@@ -8,8 +8,11 @@ export default class Comment extends Component {
     render() {
         const {author, message, timestamp} = this.props.comment;
         const time = (new Date(timestamp)).toLocaleDateString() +' '+ (new Date(timestamp)).toLocaleTimeString();
-        return <li className="comment-box">
-            <div><b>{author}</b> <i>{time}</i></div>
+        return <li className="list-group-item">
+            <h5>
+                <b>{author}</b>
+                <span className="date-box"><i>{time}</i></span>
+            </h5>
             <div>{message}</div>
         </li>;
     }
